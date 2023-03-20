@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num1, num2 int
+	fmt.Println("digite um número:")
+	fmt.Scan(&num1)
+	fmt.Println("digite o segundo número:")
+	fmt.Scan(&num2)
+	if num1 >= 0 && num2 >= 0 {
+		multiplicacao := num1 * num2
+		fmt.Printf("o resultado é: %d", multiplicacao)
+	} else if num1 < 0 && num2 >= 0 {
+		soma := num1 + num2
+		fmt.Printf("o resultado é: %d", soma)
+	} else {
+		soma := num1 + num2
+		fmt.Printf("o resultado é: %d", soma)
+	}
+}

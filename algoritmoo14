@@ -11,24 +11,22 @@ func main() {
 	fmt.Scan(&sexo)
 	fmt.Println("qual seu peso?")
 	fmt.Scan(&peso)
-	imc := peso / (altura * altura)
+	imc = peso / (altura * altura)
 	if sexo == "homem" {
-		if imc < 18
+		if imc < 18 {
 			fmt.Printf("você esta abaixo do peso ideal")
-	} else if imc >= 18 && imc <= 25 {
-		fmt.Printf("você esta no peso ideal, parabens")
-	} else {
-		fmt.Printf("você esta acima do peso")
+		} else if imc >= 18 && imc <= 25 {
+			fmt.Printf("você esta no peso ideal, parabens")
+		} else {
+			fmt.Printf("você esta acima do peso")
+		}
 	} else if sexo == "mulher" {
 		if imc < 18 {
 			fmt.Printf("você esta abaixo do peso ideal")
-		} else if imc >= 18 && imc <= 24
+		} else if imc >= 18 && imc <= 24 {
 			fmt.Printf("você esta no peso ideal, parabens")
-	} else {
-		fmt.Printf("você esta acima do peso ideal")
+		} else {
+			fmt.Printf("você esta acima do peso ideal")
+		}
 	}
-}
-
-
-
 }

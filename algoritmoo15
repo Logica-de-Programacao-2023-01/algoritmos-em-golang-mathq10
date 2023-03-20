@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num int
+	fmt.Println("digite um número:")
+	fmt.Scan(&num)
+	if num%3 == 0 && num%5 == 0 {
+		fmt.Printf("%d é multiplo de 3 e de 5", num)
+	} else {
+		fmt.Printf("%d não é multiplo de 3 e de 5 ao mesmo tempo", num)
+	}
+}
